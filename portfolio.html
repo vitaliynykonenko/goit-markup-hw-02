@@ -4,41 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Портфолио</title>
   </head>
   <body>
     <!---Шапка сайту-->
-    <header>
-      <nav>
-        <a href="/">WebStudio</a>
+    <header class="header">
+      <nav class="header-navigation">
+        <a href="/" class="logo link"
+          >Web<span class="logo-first">Studio</span></a
+        >
 
-        <ul>
-          <li><a href="/Студия">Студия</a></li>
-          <li><a href="/Портфолио">Портфолио</a></li>
-          <li><a href="/Контакты">Контакты</a></li>
+        <ul class="header-list list">
+          <li class="header-item">
+            <a class="header-link link" href="./index.html">Студия</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="/Контакты">Контакты</a>
+          </li>
         </ul>
       </nav>
       <p>
-        <a href="malto:info@devstudio.com">info@devstudio.com</a>
+        <a class="header-address link" href="malto:info@devstudio.com">
+          info@devstudio.com
+        </a>
       </p>
       <p>
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="header-address link" href="tel:+380961111111"
+          >+38 096 111 11 11</a
+        >
       </p>
     </header>
 
-    <main>
-      <section>
-        <button type="button">Все</button>
-        <button type="button">Веб-сайты</button>
-        <button type="button">Приложения</button>
-        <button type="button">Дизайн</button>
-        <button type="button">Маркетинг</button>
-      </section>
+    <main class="button">
+      <ul class="button-list list">
+        <li><button type="button" class="button-item">Все</button></li>
+        <li><button type="button" class="button-item">Веб-сайты</button></li>
+        <li><button type="button" class="button-item">Приложения</button></li>
+        <li><button type="button" class="button-item">Дизайн</button></li>
+        <li><button type="button" class="button-item">Маркетинг</button></li>
+      </ul>
 
-      <section>
-        <h2 hidden>Наши работы</h2>
-        <ul>
+      <section class="works">
+        <h2 class="visually-hidden">Наши работы</h2>
+        <ul class="work-list list">
           <li>
             <img
               src="/images/img1.jpg"
@@ -46,8 +62,8 @@
               width="370"
               height="294"
             />
-            <h3>Технокряк</h3>
-            <p lang="en">Веб-сайт</p>
+            <h3 class="work-title">Технокряк</h3>
+            <p lang="en" class="work-text">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -56,8 +72,10 @@
               width="370"
               height="294"
             />
-            <h3>Постер New Orlean vs Golden Star</h3>
-            <p>Дизайн</p>
+            <h3 class="work-title">
+              Постер <span lang="en">New Orlean vs Golden Star</span>
+            </h3>
+            <p class="work-text">Дизайн</p>
           </li>
           <li>
             <img
@@ -66,8 +84,8 @@
               width="370"
               height="294"
             />
-            <h3>Ресторан Seafood</h3>
-            <p>Приложение</p>
+            <h3 class="work-title">Ресторан <span lang="en">Seafood</span></h3>
+            <p class="work-text">Приложение</p>
           </li>
           <li>
             <img
@@ -76,8 +94,8 @@
               width="370"
               height="294"
             />
-            <h3>Проект Prime</h3>
-            <p>Маркетинг</p>
+            <h3 class="work-title">Проект <span lang="en">Prime</span></h3>
+            <p class="work-text">Маркетинг</p>
           </li>
           <li>
             <img
@@ -86,8 +104,8 @@
               width="370"
               height="294"
             />
-            <h3>Проект Boxes</h3>
-            <p>Приложение</p>
+            <h3 class="work-title">Проект <span lang="en">Boxes</span></h3>
+            <p class="work-text">Приложение</p>
           </li>
           <li>
             <img
@@ -96,18 +114,20 @@
               width="370"
               height="294"
             />
-            <h3 lang="en">Inspiration has no Borders</h3>
-            <p>Веб-сайт</p>
+            <h3 lang="en" class="work-title">Inspiration has no Borders</h3>
+            <p class="work-text">Веб-сайт</p>
           </li>
           <li>
             <img src="./images/img7.jpg" alt="Книга" width="370" height="294" />
-            <h3>Издание Limited Edition</h3>
-            <p>Дизайн</p>
+            <h3 class="work-title">
+              Издание <span lang="en">Limited Edition</span>
+            </h3>
+            <p class="work-text">Дизайн</p>
           </li>
           <li>
             <img src="./images/img8.jpg" alt="Лейбл" width="370" height="294" />
-            <h3>Проект LAB</h3>
-            <p>Маркетинг</p>
+            <h3 class="work-title">Проект <span lang="en">LAB</span></h3>
+            <p class="work-text">Маркетинг</p>
           </li>
           <li>
             <img
@@ -116,8 +136,8 @@
               width="370"
               height="294"
             />
-            <h3 lang="en">Growing Business</h3>
-            <p>Приложение</p>
+            <h3 lang="en" class="work-title">Growing Business</h3>
+            <p class="work-text">Приложение</p>
           </li>
         </ul>
       </section>
@@ -125,21 +145,34 @@
 
     <!--Подвал-->
     <footer>
-      <a href="/">WebStudio</a>
-      <address>
-        <ul>
-          <li>
-            <a
-              href="https://goo.gl/maps/pw15rnCZKa5F1fGf9"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li><a href="malto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class="footer-content">
+        <a href="/" class="logo link"
+          >Web<span class="logo-second">Studio</span></a
+        >
+        <address>
+          <ul class="address-list list">
+            <li>
+              <a
+                class="address link"
+                href="https://goo.gl/maps/pw15rnCZKa5F1fGf9"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li>
+              <a class="address-footer link" href="malto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a class="address-footer link" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
