@@ -7,6 +7,7 @@
 
 body {
   font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--main-color);
 }
 
 .link {
@@ -56,12 +57,15 @@ body {
   color: var(--accent-color);
 }
 
+.header-list .link.current {
+  color: var(--accent-color);
+}
+
 .header-address {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: var(--secondary-color);
 }
 
@@ -89,9 +93,6 @@ body {
   font-family: inherit;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-color);
   background-color: #f5f4fa;
@@ -135,6 +136,10 @@ body {
   color: var(--main-color);
 }
 
+.team {
+  background-color: #f5f4fa;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -159,9 +164,7 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  text-align: center;
   background-color: #f5f4fa;
-  border-radius: 4px;
   cursor: pointer;
 }
 
