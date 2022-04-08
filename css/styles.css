@@ -1,13 +1,14 @@
 :root {
-  --main-color: #212121;
-  --secondary-color: #757575;
-  --third-color: #ffffff;
+  --title-color: #212121;
+  --first-color: #757575;
+  --second-color: #ffffff;
   --accent-color: #2196f3;
+  --main-background-color: #f5f4fa;
 }
 
 body {
   font-family: "Roboto", "Raleway", sans-serif;
-  color: var(--main-color);
+  color: var(--title-color);
 }
 
 .link {
@@ -49,7 +50,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-color);
+  color: var(--title-color);
 }
 
 .header-link:hover,
@@ -66,7 +67,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--secondary-color);
+  color: var(--first-color);
 }
 
 .header-address:hover,
@@ -84,25 +85,25 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--third-color);
+  color: var(--second-color);
 }
 
 .hero-btn {
   font-family: inherit;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.86;
   letter-spacing: 0.06em;
-  color: var(--main-color);
-  background-color: #f5f4fa;
+  color: var(--second-color);
+  background-color: var(--accent-color);
   cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var(--third-color);
-  background-color: var(--accent-color);
+  background-color: #188ce8;
 }
 
 /* ------------------MAIN---------------- */
@@ -112,47 +113,51 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-color);
+  color: var(--title-color);
 }
 
 .feature-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: var(--first-color);
 }
 
 .about-title {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--main-color);
+  text-align: center;
+  color: var(--title-color);
 }
 
 .team-title {
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-color);
+  color: var(--title-color);
 }
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--main-background-color);
 }
 
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-color);
+  color: var(--title-color);
 }
 
 .team-position {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: var(--first-color);
 }
 
 /* ------------------PORTFOLIO---------------- */
@@ -163,14 +168,18 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  color: var(--main-color);
-  background-color: #f5f4fa;
+  color: var(--title-color);
+  background-color: var(--main-background-color);
   cursor: pointer;
 }
 
 .button-item:hover,
 .button-item:focus {
-  color: var(--third-color);
+  color: var(--second-color);
+  background-color: var(--accent-color);
+}
+
+.button-item .button.current {
   background-color: var(--accent-color);
 }
 
@@ -178,14 +187,14 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--main-color);
+  color: var(--title-color);
 }
 
 .work-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: var(--first-color);
 }
 
 /* ------------------FOOTER---------------- */
@@ -195,7 +204,7 @@ body {
 }
 
 .logo-second {
-  color: var(--third-color);
+  color: var(--second-color);
 }
 
 .address {
@@ -203,7 +212,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--third-color);
+  color: var(--second-color);
 }
 
 .address:hover,
