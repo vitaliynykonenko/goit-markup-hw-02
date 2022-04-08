@@ -179,7 +179,8 @@ body {
   background-color: var(--accent-color);
 }
 
-.button-item .button.current {
+.button-list .button-item.current {
+  color: var(--second-color);
   background-color: var(--accent-color);
 }
 
